@@ -1,0 +1,101 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+knbadnore 
+
+/
+Jan2021POMSeries
+3
+88
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Jan2021POMSeries/.gitignore
+
+naveenautomationlabs added pom code
+Latest commit daf7a72 on Apr 20
+ History
+ 0 contributors
+59 lines (55 sloc)  810 Bytes
+  
+allure-results/
+screenshots/
+test-output/
+
+
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+##############################
+## Maven
+##############################
+target/
+pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+##############################
+## Eclipse
+##############################
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+## OS X
+##############################
+.DS_Store
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
