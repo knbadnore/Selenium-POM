@@ -14,7 +14,7 @@ public class ProductInfoPage {
 	private WebDriver driver;
 	ElementUtils elementUtils;
 
-	By productHeader = By.cssSelector("div #content h1");
+	By productHeader = By.cssSelector("div#content h1");
 	By productImages = By.cssSelector("ul.thumbnails li");
 	By productMetadata = By.cssSelector("div.col-sm-4 ul.list-unstyled:nth-of-type(1)");
 	By priceData = By.cssSelector("div.col-sm-4 ul.list-unstyled:nth-of-type(2) li");

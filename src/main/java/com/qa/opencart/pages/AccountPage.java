@@ -19,8 +19,8 @@ public class AccountPage {
 	private By accSectionHeader = By.cssSelector("div#content h2");
 	private By header = By.cssSelector("div#logo h1 a");
 	private By logoutLink = By.linkText("Logout");
-	private By searchField = By.xpath("//input[@class=\"form-control input-lg\"]");
-	private By searchButton = By.xpath("//button[@class=\"btn btn-default btn-lg\"]");
+	private By searchField = By.xpath("//input[@class='form-control input-lg']");
+	private By searchButton = By.xpath("//button[@class='btn btn-default btn-lg']");
 
 	public AccountPage(WebDriver driver) {
 		elementUtil = new ElementUtils(driver);

@@ -26,7 +26,7 @@ public class AccountPageTest extends BaseTest {
 	public void accountPageHeaderTest() {
 		String header = accountPage.getAccountPageHeaders();
 		System.out.println("Header" + header);
-		Assert.assertEquals(header, Constants.ACCOUNT_PAGE_HEADER);
+		Assert.assertEquals(header, Constants.ACCOUNT_PAGE_TITLE);
 	}
 
 	@Test

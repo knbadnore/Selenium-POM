@@ -20,16 +20,26 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.opencart.driverfactory.DriverFactory;
+
 public class ElementUtils {
 
 	private WebDriver driver;
+	private JavaScriptUtil js;
 
 	public ElementUtils(WebDriver driver) {
 		this.driver = driver;
+		this.js = new JavaScriptUtil(driver);
 	}
 
 	public WebElement getElement(By locator) {
-		return driver.findElement(locator);
+		WebElement element = driver.findElement(locator);
+
+		if (Boolean.parseBoolean(DriverFactory.highlight)) {
+			js.flash(element);
+		}
+
+		return element;
 	}
 
 	public List<WebElement> getElements(By locator) {
@@ -37,7 +47,9 @@ public class ElementUtils {
 	}
 
 	public void doSendKeys(By locator, String value) {
-		getElement(locator).sendKeys(value);
+		WebElement element = getElement(locator);
+		element.clear();
+		element.sendKeys(value);
 	}
 
 	public void doActionsSendKeys(By locator, String value) {

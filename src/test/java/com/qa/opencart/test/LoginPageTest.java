@@ -25,7 +25,7 @@ public class LoginPageTest extends BaseTest {
 
 	@Test
 	public void loginTest() {
-		loginPage.doLoginTest("naveenanimation20@gmail.com", "Selinium123456");
+		loginPage.doLoginTest(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 }

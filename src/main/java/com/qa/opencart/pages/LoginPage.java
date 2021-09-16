@@ -15,6 +15,7 @@ public class LoginPage {
 	private By password = By.id("input-password");
 	private By loginButton = By.xpath("//input[@value=\"Login\"]");
 	private By forgotPwdLink = By.xpath("//div[@class=\"form-group\"]//a[text()=\"Forgotten Password\"]");
+	private By registerBtn = By.xpath("//div[@class='list-group']//a[text() =\"Register\"]");
 
 	// 2.Constructor to access the driver object
 	public LoginPage(WebDriver driver) {
@@ -42,5 +43,10 @@ public class LoginPage {
 		elementUtils.doClick(loginButton);
 
 		return new AccountPage(driver);
+	}
+
+	public RegistrationPage clickRegister() {
+		elementUtils.doClick(registerBtn);
+		return new RegistrationPage(driver);
 	}
 }
