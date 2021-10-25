@@ -40,4 +40,7 @@ public class BaseTest {
 	public void teardown() {
 		driver.quit();
 	}
+	public void test() {
+		
+	}
 }
