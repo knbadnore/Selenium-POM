@@ -43,4 +43,7 @@ public class BaseTest {
 	public void test() {
 		
 	}
+	public void test12() {
+		
+	}
 }
