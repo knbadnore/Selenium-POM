@@ -15,6 +15,7 @@ import com.qa.opencart.pages.RegistrationPage;
 import com.qa.opencart.pages.SearchResultPage;
 
 public class BaseTest {
+	//added comment
 
 	public WebDriver driver;
 	public LoginPage loginPage;
